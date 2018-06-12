@@ -22,9 +22,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_credit_card_black_24dp"
-                android:hint="  R$ Valor"
-                android:inputType="numberDecimal"
-                android:privateImeOptions="p" />
+                android:hint=" R$ Valor"
+                android:inputType="numberDecimal" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -36,9 +35,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_date_range_black_24dp"
-                android:hint="  Data"
-                android:inputType="date" />
-
+                android:hint=" Data"
+                android:inputType="date"
+                android:onClick="calendario"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -49,7 +48,7 @@
                 android:id="@+id/descricao_despesa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="  Descrição"
+                android:hint="Descrição"
                 android:inputType="text" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>

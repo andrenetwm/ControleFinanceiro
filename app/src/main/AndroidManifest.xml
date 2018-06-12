@@ -21,23 +21,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DespesaActivity"
-            android:label="@string/title_activity_despesa"
+            android:name=".ReceitaActivity"
+            android:label="@string/title_activity_receita"
             android:parentActivityName=".ListActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="senac.controlefinanceiro.ListActivity" />
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
-            android:name=".ReceitaActivity"
-            android:label="@string/title_activity_receita"
+            android:name=".DespesaActivity"
+            android:label="@string/title_activity_despesa"
             android:parentActivityName=".ListActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

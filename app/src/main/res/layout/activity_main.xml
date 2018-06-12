@@ -15,7 +15,6 @@
         android:layout_marginHorizontal="10dp"
         android:inputType="number"/>
 
-
     <EditText
         android:id="@+id/numero2"
         android:layout_width="match_parent"
@@ -28,9 +27,7 @@
         android:id="@+id/calcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular"
+        android:text="@string/btnCalcular"
         android:onClick="Somar"/>
-
-
 
 </LinearLayout>
