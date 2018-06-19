@@ -45,5 +45,4 @@
         app:srcCompat="@drawable/ic_check_white_24dp"
         android:onClick="salvar"/>
 
-
 </android.support.design.widget.CoordinatorLayout>

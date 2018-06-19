@@ -14,7 +14,10 @@ import android.widget.EditText;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import senac.controlefinanceiro.entities.ContaContrato;
+import senac.controlefinanceiro.entities.ContaDbHelper;
 import senac.controlefinanceiro.objects.Despesa;
+import senac.controlefinanceiro.objects.Receita;
 
 public class ReceitaActivity extends AppCompatActivity {
 
@@ -62,17 +65,20 @@ public class ReceitaActivity extends AppCompatActivity {
 
     public void salvar(View view) {
         try {
-            Despesa despesa = new Despesa(
+            Receita receita = new Receita(
                     Double.parseDouble(valorReceita.getText().toString()),
                     new SimpleDateFormat("dd-MM-yyyy").parse(dataReceita.getText().toString()),
                     descricaoReceita.getText().toString()
             );
 
-            ListActivity.contas.add(despesa);
+            ContaDbHelper contaDbHelper = new ContaDbHelper(this);
+            contaDbHelper.Salvar(receita);
+
+            //ListActivity.contas.add(despesa);
 
             finish();
 
-        } catch (Exception e) {
+        } catch (Exception e){
             Log.e("Receita", e.getMessage());
         }
     }

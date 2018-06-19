@@ -1,10 +1,7 @@
 package senac.controlefinanceiro;
 
 import android.app.DatePickerDialog;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -14,11 +11,11 @@ import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
+import java.util.zip.Inflater;
 
+import senac.controlefinanceiro.entities.ContaDbHelper;
 import senac.controlefinanceiro.objects.Despesa;
 
 public class DespesaActivity extends AppCompatActivity {
@@ -39,16 +36,6 @@ public class DespesaActivity extends AppCompatActivity {
         valorDespesa = findViewById(R.id.valor_despesa);
         dataDespesa = findViewById(R.id.data_despesa);
         descricaoDespesa = findViewById(R.id.descricao_despesa);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
-
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_despesa, menu);
-
-        return true;
     }
 
     public void calendario(View view) {
@@ -77,9 +64,8 @@ public class DespesaActivity extends AppCompatActivity {
 
     public void salvar(View view) {
         try {
-
-            if (valorDespesa.getText().toString().isEmpty()) {
-                valorDespesa.setError("Entre com o valor");
+            if (valorDespesa.getText().toString().isEmpty()){
+                valorDespesa.setError("Entre com um valor!");
 
                 return;
             }
@@ -90,7 +76,10 @@ public class DespesaActivity extends AppCompatActivity {
                     descricaoDespesa.getText().toString()
             );
 
-            ListActivity.contas.add(despesa);
+            ContaDbHelper contaDbHelper = new ContaDbHelper(this);
+            contaDbHelper.Salvar(despesa);
+
+            //ListActivity.contas.add(despesa);
 
             finish();
 

@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="4" />
+                                                <entry key="scalingPercent" value="2" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -34,7 +34,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="67" />
+                                                <entry key="scalingPercent" value="50" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -44,16 +44,47 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="fbf9ff" />
-                                      <entry key="foregroundImage" value="C:\Users\NOITE\Pictures\bank.svg" />
-                                      <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="webIconShape" value="CIRCLE" />
+                                      <entry key="foregroundImage" value="C:\Users\PROF-NOITE\Pictures\bank.svg" />
+                                      <entry key="legacyIconShape" value="NONE" />
+                                      <entry key="webIconShape" value="NONE" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
+                            <entry key="launcherLegacy">
+                              <value>
+                                <PersistentState>
+                                  <option name="children">
+                                    <map>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="paddingPercent" value="10" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="iconShape" value="CIRCLE" />
+                                      <entry key="imageAsset" value="C:\Users\PROF-NOITE\Pictures\bank.png" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>
@@ -79,7 +110,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_done_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_date_range_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -89,9 +120,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="fffdfe" />
-                            <entry key="outputName" value="ic_done_black_24dp" />
-                            <entry key="sourceFile" value="C:\Users\NOITE" />
+                            <entry key="outputName" value="ic_date_range_black_24dp" />
+                            <entry key="sourceFile" value="C:\Users\PROF-NOITE\Pictures\bank.psd" />
                           </map>
                         </option>
                       </PersistentState>
